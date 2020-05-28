@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-1DMUQ9HH",
+    "children" : [ {
+      "name" : "8736-MainThread",
+      "children" : [ {
+        "name" : "test_2",
+        "uid" : "3ac910c208bb0bcf",
+        "parentUid" : "4540cfa8ddcae6a2c990e4ef3302b2d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589428009135,
+          "stop" : 1589428010056,
+          "duration" : 921
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_1",
+        "uid" : "fa6f98cf906a8b48",
+        "parentUid" : "4540cfa8ddcae6a2c990e4ef3302b2d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589428008490,
+          "stop" : 1589428009114,
+          "duration" : 624
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4540cfa8ddcae6a2c990e4ef3302b2d9"
+    } ],
+    "uid" : "c9dad73809632ea2981bd458823ebd93"
+  } ]
+}
