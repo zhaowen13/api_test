@@ -1,0 +1,5 @@
+[32mINFO    [0m my_logger:demo.py:51 
+name:getRegionHomeNumbers
+url:/getRegionHomeNumbers?area=
+headers:{'Origin': 'https://www.oshadan.com', 'Referer': 'https://www.oshadan.com', 'Accept': 'application/json, text/plain, */*'}
+response:{u'data': {u'num_today_vul': u'50', u'num_all_dev': u'340726', u'num_today_dev': u'5040', u'num_all_vul': u'1704'}, u'success': True}

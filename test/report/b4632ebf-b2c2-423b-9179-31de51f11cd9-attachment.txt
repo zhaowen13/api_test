@@ -1,0 +1,7 @@
+2020-05-29 09:55:23,176 - [demo.py --> line:38] - INFO : 
+name:login
+url:/user-check
+headers:{'Origin': 'https://www.oshadan.com', 'Referer': 'https://www.oshadan.com', 'Accept': 'application/json, text/plain, */*'}
+body:{'username': 'zhuoma_cs', 'captcha': '', 'password': '154712f604014c80361b64a8c334'}
+response:{u'roleinfos': u'\u533a\u57df\u7528\u6237', u'success': True}
+2020-05-29 09:55:23,177 - [demo.py --> line:41] - INFO : {'login': {u'roleinfos': u'\u533a\u57df\u7528\u6237', u'success': True}}

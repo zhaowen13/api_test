@@ -42,25 +42,27 @@ class api_test(object):
         self.my_requests= requests.Session()
 
     def post(self,name,url,body,headers):
-        response=self.my_requests.post(uri+url,body,headers,cookies=self.cookies).json()
+        response=self.my_requests.post(self.uri+url,body,headers,cookies=self.cookies).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         self.data={name:response}
 
     def get(self,name,url,headers):
-        response=self.my_requests.get(uri+url,cookies=self.cookies).json()
+        response=self.my_requests.get(self.uri+url,cookies=self.cookies).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nresponse:{3}".format(name,url,headers,response))
         self.data={name:response}
 
     def put(self,name,url,body,headers):
-        response=self.my_requests.put(uri+url,body,headers,cookies=self.cookies).json()
+        response=self.my_requests.put(self.uri+url,body,headers,cookies=self.cookies).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         self.data={name:response}
 
     def delete(self,name,url,body,headers):
-        response=self.my_requests.put(uri+url,body,headers,cookies=cookies).json()
+        response=self.my_requests.put(self.uri+url,body,headers,cookies=cookies).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         self.data={name:response}
     
+test=api_test()
+
 
 if __name__ == "__main__":
     name="login"
