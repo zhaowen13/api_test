@@ -1,5 +1,0 @@
-2020-05-29 10:00:45,216 - [demo.py --> line:51] - INFO : 
-name:getRegionHomeNumbers
-url:/getRegionHomeNumbers?area=
-headers:{'Origin': 'https://www.oshadan.com', 'Referer': 'https://www.oshadan.com', 'Accept': 'application/json, text/plain, */*'}
-response:{u'data': {u'num_today_vul': u'50', u'num_all_dev': u'340726', u'num_today_dev': u'5039', u'num_all_vul': u'1704'}, u'success': True}

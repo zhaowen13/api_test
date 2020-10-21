@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-4V3QBUP4",
+    "children" : [ {
+      "name" : "8608-MainThread",
+      "children" : [ {
+        "name" : "test_case_01",
+        "uid" : "7519d16ebb55ca0f",
+        "parentUid" : "538c0d402ccd0e1755afeb28f738fa47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603270164726,
+          "stop" : 1603270165101,
+          "duration" : 375
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_case_02",
+        "uid" : "f90fac265e1a3322",
+        "parentUid" : "538c0d402ccd0e1755afeb28f738fa47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603270165106,
+          "stop" : 1603270165521,
+          "duration" : 415
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "538c0d402ccd0e1755afeb28f738fa47"
+    } ],
+    "uid" : "d3f9ac2404da19e45796ab23e9684e97"
+  } ]
+}

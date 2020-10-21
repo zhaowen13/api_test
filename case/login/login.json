@@ -1,0 +1,40 @@
+{
+    "case_list": [
+        {
+            "name": "login",
+            "method": "post",
+            "headers": {
+                "Accept": "application/x-www-form-urlencoded; charset=utf-8"
+            },
+            "body": {
+                "captcha": "1234",
+                "mobile": "${phone[1].mobile}"
+            },
+            "assertion": {
+                "expected": "",
+                "actual": ""
+            }
+        },
+        {
+            "name": "resume_save",
+            "method": "post",
+            "headers": {
+                "Content-type": "application/json; charset=utf-8"
+            },
+            "body": {
+                "member": {
+                    "name": "二空空啊啊",
+                    "gender": "1",
+                    "birthday": "2000-1-1",
+                    "job_want_status": "1",
+                    "expect_salary_min": "2000",
+                    "expect_salary_max": "5000"
+                },
+                "resume": {
+                    "expect_city_id": 11000,
+                    "expect_job": "10,11"
+                }
+            }
+        }
+    ]
+}

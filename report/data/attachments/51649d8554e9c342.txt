@@ -1,0 +1,2 @@
+我是body啊
+{"captcha": "1234", "mobile": "${phone[1].mobile}"}
