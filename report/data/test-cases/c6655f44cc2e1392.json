@@ -1,12 +1,12 @@
 {
-  "uid" : "f90fac265e1a3322",
-  "name" : "test_case_02",
-  "fullName" : "test_demo#test_case_02",
-  "historyId" : "94fdcd9764e932b6567aad9019e59b42",
+  "uid" : "c6655f44cc2e1392",
+  "name" : "test_case_01",
+  "fullName" : "test_demo#test_case_01",
+  "historyId" : "b418f741c72d07c6507c3d0c440db129",
   "time" : {
-    "start" : 1603270165106,
-    "stop" : 1603270165521,
-    "duration" : 415
+    "start" : 1603869197511,
+    "stop" : 1603869198008,
+    "duration" : 497
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,34 +15,28 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "2701233a3f662d52",
+      "uid" : "383dec7504fd1b1f",
       "name" : "log",
-      "source" : "2701233a3f662d52.txt",
+      "source" : "383dec7504fd1b1f.txt",
       "type" : "text/plain",
-      "size" : 3132
+      "size" : 2320
     }, {
-      "uid" : "a34b8bc9ccb2792",
-      "name" : "stdout",
-      "source" : "a34b8bc9ccb2792.txt",
-      "type" : "text/plain",
-      "size" : 235
-    }, {
-      "uid" : "24076c7e5e2fd20f",
+      "uid" : "770f2ff3a21f9cdf",
       "name" : "stderr",
-      "source" : "24076c7e5e2fd20f.txt",
+      "source" : "770f2ff3a21f9cdf.txt",
       "type" : "text/plain",
-      "size" : 3151
+      "size" : 2357
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 3,
-    "shouldDisplayMessage" : false,
+    "hasContent" : true,
     "stepsCount" : 0,
-    "hasContent" : true
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "feature",
-    "value" : "测试用例2"
+    "value" : "测试用例1"
   }, {
     "name" : "suite",
     "value" : "test_demo"
@@ -51,7 +45,7 @@
     "value" : "LAPTOP-4V3QBUP4"
   }, {
     "name" : "thread",
-    "value" : "8608-MainThread"
+    "value" : "19280-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -67,14 +61,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f90fac265e1a3322.json",
+  "source" : "c6655f44cc2e1392.json",
   "parameterValues" : [ ]
 }

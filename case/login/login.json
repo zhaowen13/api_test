@@ -8,7 +8,7 @@
             },
             "body": {
                 "captcha": "1234",
-                "mobile": "${phone[1].mobile}"
+                "mobile": "15080605720"
             },
             "assertion": {
                 "expected": "",

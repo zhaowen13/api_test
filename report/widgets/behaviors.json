@@ -1,19 +1,8 @@
 {
-  "total" : 2,
+  "total" : 1,
   "items" : [ {
     "uid" : "7705f29d640a1ba75b30219e8034a07d",
     "name" : "测试用例1",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "8fecada08feda27b36a122cad0b73be2",
-    "name" : "测试用例2",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

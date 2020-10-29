@@ -5,27 +5,15 @@
     "name" : "test_demo",
     "children" : [ {
       "name" : "test_case_01",
-      "uid" : "7519d16ebb55ca0f",
+      "uid" : "212caaf147d62851",
       "parentUid" : "e11bc6392381ef1d825bd019b9e8cfa7",
       "status" : "passed",
       "time" : {
-        "start" : 1603270164726,
-        "stop" : 1603270165101,
-        "duration" : 375
+        "start" : 1603872521207,
+        "stop" : 1603872521207,
+        "duration" : 0
       },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_case_02",
-      "uid" : "f90fac265e1a3322",
-      "parentUid" : "e11bc6392381ef1d825bd019b9e8cfa7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1603270165106,
-        "stop" : 1603270165521,
-        "duration" : 415
-      },
-      "flaky" : false,
+      "flaky" : true,
       "parameters" : [ ]
     } ],
     "uid" : "e11bc6392381ef1d825bd019b9e8cfa7"

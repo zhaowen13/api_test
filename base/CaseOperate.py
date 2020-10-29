@@ -20,28 +20,25 @@ class Case(object):
             for file in files:
                 with open('{0}/{1}/{2}'.format(path, folder, file), 'r', encoding='utf8')as fp:
                     json_list = json.load(fp)
-                for json_data in json_list['case_list']:    
+                for json_data in json_list['case_list']:
                     request[json_data['name']] = json_data
         return request
 
     def my_replace(self, request_list):
         body = json.dumps(request_list['body'])
-        print("我是body啊")
-        print(body.encode().decode('unicode_escape'))
         if '$' in body:
-            # print(body)
             joins = re.search(r'\$\{(.+?)\}', body, re.M | re.I).groups()
             for join in joins:
-                # print(join)
                 response = test.data
                 for j in join.split("."):
                     if "[" in j:
                         response = response[j.split("[")[0]]
-                        response = response[int(j.split("[")[1].replace("]",""))]
+                        response = response[int(
+                            j.split("[")[1].replace("]", ""))]
                     else:
                         response = response[j]
-                    # print(response)
-                body = json.loads(body.replace("${"+join+"}", response))
+                body=body.replace("${"+join+"}", response)
+        body = json.loads(body)
         return body
 
     def run(self, name, url):
@@ -60,16 +57,19 @@ class Case(object):
         elif method == "delete":
             test.delete(name, url, body, request_list['headers'])
         return test.data[name]
+        
 
-case=Case()
+
+case = Case()
 
 if __name__ == "__main__":
     name = "login"
-    test.data["phone"]=[]
+    test.data["phone"] = []
     test.data["phone"].append({"mobile": "15080600001"})
     test.data["phone"].append({"mobile": "15080600002"})
     url = '/1.0/common/login_captcha'
-    c=Case()
+    c = Case()
     c.run(name, url)
-    c.run("resume_save","/1.0/member/resume/save")
+    c.run("resume_save", "/1.0/member/resume/save")
+
 

@@ -1,0 +1,6 @@
+[32mINFO    [0m my_logger:BasePage.py:37 
+name:login
+url:/1.0/common/login_captcha
+headers:None
+body:{'captcha': '1234', 'mobile': '${phone[1].mobile}'}
+response:{'code': 100001, 'msg': '手机 格式不正确。', 'data': {'error': ['mobile']}}

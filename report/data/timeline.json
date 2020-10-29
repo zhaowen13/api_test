@@ -4,33 +4,21 @@
   "children" : [ {
     "name" : "LAPTOP-4V3QBUP4",
     "children" : [ {
-      "name" : "8608-MainThread",
+      "name" : "1084-MainThread",
       "children" : [ {
         "name" : "test_case_01",
-        "uid" : "7519d16ebb55ca0f",
-        "parentUid" : "538c0d402ccd0e1755afeb28f738fa47",
+        "uid" : "212caaf147d62851",
+        "parentUid" : "a0adbb0e61b3192cc2b14e19917c7936",
         "status" : "passed",
         "time" : {
-          "start" : 1603270164726,
-          "stop" : 1603270165101,
-          "duration" : 375
+          "start" : 1603872521207,
+          "stop" : 1603872521207,
+          "duration" : 0
         },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_case_02",
-        "uid" : "f90fac265e1a3322",
-        "parentUid" : "538c0d402ccd0e1755afeb28f738fa47",
-        "status" : "passed",
-        "time" : {
-          "start" : 1603270165106,
-          "stop" : 1603270165521,
-          "duration" : 415
-        },
-        "flaky" : false,
+        "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "538c0d402ccd0e1755afeb28f738fa47"
+      "uid" : "a0adbb0e61b3192cc2b14e19917c7936"
     } ],
     "uid" : "d3f9ac2404da19e45796ab23e9684e97"
   } ]

@@ -12,7 +12,6 @@ import requests
 import hashlib
 import yaml
 import sys
-
 from base.custom_logger import logger_cls
      
 
@@ -44,25 +43,25 @@ class api_test(object):
 
     def post(self,name,url,body,headers):
         headers['Authorization']=self.token
-        response=self.my_requests.post(self.uri+url,body,headers=headers,cookies=self.cookies).json()
+        response=self.my_requests.post(self.uri+url,body,headers=headers,cookies=self.cookies,verify=False).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         self.data={name:response}
 
     def get(self,name,url,headers):
         headers['Authorization']=self.token
-        response=self.my_requests.get(self.uri+url,cookies=self.cookies,headers=headers).json()
+        response=self.my_requests.get(self.uri+url,cookies=self.cookies,headers=headers,verify=False).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nresponse:{3}".format(name,url,headers,response))
         self.data={name:response}
 
     def put(self,name,url,body,headers):
         headers['Authorization']=self.token
-        response=self.my_requests.put(self.uri+url,body,headers,cookies=self.cookies).json()
+        response=self.my_requests.put(self.uri+url,body,headers,cookies=self.cookies,verify=False).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         self.data={name:response}
 
     def delete(self,name,url,body,headers):
         headers['Authorization']=self.token
-        response=self.my_requests.put(self.uri+url,body,headers,cookies=self.cookies).json()
+        response=self.my_requests.put(self.uri+url,body,headers,cookies=self.cookies,verify=False).json()
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         self.data={name:response}
     

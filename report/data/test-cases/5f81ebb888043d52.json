@@ -1,12 +1,12 @@
 {
-  "uid" : "7519d16ebb55ca0f",
+  "uid" : "5f81ebb888043d52",
   "name" : "test_case_01",
   "fullName" : "test_demo#test_case_01",
   "historyId" : "b418f741c72d07c6507c3d0c440db129",
   "time" : {
-    "start" : 1603270164726,
-    "stop" : 1603270165101,
-    "duration" : 375
+    "start" : 1603869654439,
+    "stop" : 1603869655026,
+    "duration" : 587
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,29 +15,23 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "2f48712e1121123a",
+      "uid" : "1fbf6257918c6b7d",
       "name" : "log",
-      "source" : "2f48712e1121123a.txt",
+      "source" : "1fbf6257918c6b7d.txt",
       "type" : "text/plain",
       "size" : 2409
     }, {
-      "uid" : "51649d8554e9c342",
-      "name" : "stdout",
-      "source" : "51649d8554e9c342.txt",
-      "type" : "text/plain",
-      "size" : 66
-    }, {
-      "uid" : "8541951ba692519b",
+      "uid" : "1a59d4298b29a890",
       "name" : "stderr",
-      "source" : "8541951ba692519b.txt",
+      "source" : "1a59d4298b29a890.txt",
       "type" : "text/plain",
       "size" : 2446
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 3,
-    "shouldDisplayMessage" : false,
+    "hasContent" : true,
     "stepsCount" : 0,
-    "hasContent" : true
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -51,7 +45,7 @@
     "value" : "LAPTOP-4V3QBUP4"
   }, {
     "name" : "thread",
-    "value" : "8608-MainThread"
+    "value" : "18992-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -67,14 +61,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7519d16ebb55ca0f.json",
+  "source" : "5f81ebb888043d52.json",
   "parameterValues" : [ ]
 }

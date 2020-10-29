@@ -3,15 +3,15 @@ from DBUtils.PooledDB import PooledDB
 
 class db(object):
     def __init__(self):
-        yamlPath="db.yaml"
+        yamlPath="config.yaml"
         yaml.load(yamlPath, Loader=yaml.BaseLoader)
         yaml.warnings({'YAMLLoadWarning': False})
         f = open(yamlPath, 'r')
-        data = yaml.load(f.read())['uat']
-        self.pool = PooledDB(pymysql,5,host=data['host'],user=data['user'],passwd=data['passwd'],db=data['db'],port=data['port']) 
+        data = yaml.load(f.read())['st3']
+        self.pool = PooledDB(pymysql,5,host=data['db_host'],user=data['db_user'],passwd=data['db_pass'],db=data['db'],port=data['db_port']) 
    
-    def select(self,mobile):
-        sql="select content from sms_logs where id=(select max(id) from sms_logs where mobile='{0}')".format(mobile)
+    def select(self):
+        sql="select content from sms_logs where id=(select max(id) from sms_logs where mobile='15080605720')"
         conn = self.pool.connection() 
         cur=conn.cursor()
         r=cur.execute(sql)
