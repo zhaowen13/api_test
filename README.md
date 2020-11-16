@@ -8,7 +8,7 @@
 
  二.使用
 -------
-1.在case目录创建模块目录，在模块目录下面创建对应的json文件，名字随便取（能让别人看懂就行）
+1. 在case目录创建模块目录，在模块目录下面创建对应的json文件，名字随便取（能让别人看懂就行）
 例：
 ```{
     "case_list": [
@@ -57,15 +57,14 @@
     ]
 }
 ```
-2.使用变量时${请求名.data[1]}
-3.调用本地方法${myMethod.idiot(${test.mobile})}   idiot为方法名方法内的参数也可以调用变量
-4.MyMethod中可以自定义方法，通过${myMethod.方法名(参数)}调用
-5.请求地址,body和断言都可以使用变量
+2. 使用变量时${请求名.data[1]}
+3. 调用本地方法${myMethod.idiot(${test.mobile})}   idiot为方法名方法内的参数也可以调用变量
+4. MyMethod中可以自定义方法，通过${myMethod.方法名(参数)}调用
+5. 请求地址,body和断言都可以使用变量
 三.执行case
 -------
-
-1.在test目录下创建以test开头的py文件 例test_01.py
-2.在test_01.py 中创建类Test_choice   choice为case中的文件夹（模块）名
+1. 在test目录下创建以test开头的py文件 例test_01.py
+2. 在test_01.py 中创建类Test_choice   choice为case中的文件夹（模块）名
 例
 ```@allure.feature('测试用例1')    #allure报告
 @pytest.mark.parametrize('name', (case.caae_name[module_name]["login"]))
