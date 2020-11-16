@@ -1,6 +1,6 @@
 # 一.基本简介
 >>1.采用requests库，BasePage初始化时会读取config配置文件获取请求地址，对requests基础的get,post等请求做了封装，加入了日志,
-\<br>把login也封装在底层，login会把登录信息（cookies，token，Session等）存放到属性中，在其他请求被调用时默认会带上登录信息
+<br/>把login也封装在底层，login会把登录信息（cookies，token，Session等）存放到属性中，在其他请求被调用时默认会带上登录信息
         ，每个请求的response会以属性的形式存放在data属性中，属性的名称就是请求的名称
         2.CaseOperate是case解析和执行，在初始化时会读取所有case目录下面所有的文件，把case按目录，name，存放在字典中
 
