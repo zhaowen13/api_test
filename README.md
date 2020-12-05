@@ -61,6 +61,7 @@
 3. 调用本地方法${myMethod.idiot(${test.mobile})}   idiot为方法名方法内的参数也可以调用变量
 4. MyMethod中可以自定义方法，通过${myMethod.方法名(参数)}调用
 5. 请求地址,body和断言都可以使用变量
+
 三.执行case
 -------
 1. 在test目录下创建以test开头的py文件 例test_01.py
