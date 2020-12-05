@@ -1,0 +1,5 @@
+[32mINFO    [0m my_logger:BasePage.py:50 
+name:resume_list
+url:/1.0/common/banner?client_type=1&type=1&city_id=11000&request_sign=A3902DA366263CB95A38E2D41AD53E8C
+headers:{'Accept': 'application/x-www-form-urlencoded; charset=utf-8', 'Authorization': 'bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC91c2VyLXNlcnZpY2Uuc3QzLnRlc3QubGFueGlua2EuY29tXC8yLjBcL3VzZXJzXC9sb2dpbiIsImlhdCI6MTYwNTQ5MTY1NywiZXhwIjoxNjA2Nzg3NjU3LCJuYmYiOjE2MDU0OTE2NTcsImp0aSI6IkYzbjN3RU40ejh2SGhaeHkiLCJzdWIiOjUxMTcyOTIsInBydiI6IjNhN2IwNmU5NTBkMDhlMjMzMjkyMjdjN2E2YTUyMzQyYWJiNGYxOWIiLCJidXNpbmVzc190eXBlIjo2fQ.c89tnw0MpQt7JhezM1grv6dGjEuIVjFmiLclu2Et5ZU'}
+response:{'code': 0, 'msg': '成功', 'data': {'list': []}}

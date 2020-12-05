@@ -1,2 +1,4 @@
 "Status","Name","Duration in ms","Description"
-"passed","test_demo#test_case_01","0",""
+"passed","test_01.Test_choice#test_login","295",""
+"passed","test_01.Test_choice#test_login","82",""
+"passed","test_01.Test_choice#test_login","226",""

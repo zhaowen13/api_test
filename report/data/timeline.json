@@ -4,21 +4,45 @@
   "children" : [ {
     "name" : "LAPTOP-4V3QBUP4",
     "children" : [ {
-      "name" : "1084-MainThread",
+      "name" : "12704-MainThread",
       "children" : [ {
-        "name" : "test_case_01",
-        "uid" : "212caaf147d62851",
-        "parentUid" : "a0adbb0e61b3192cc2b14e19917c7936",
+        "name" : "test_login[login]",
+        "uid" : "89b95a3cd1c8d4eb",
+        "parentUid" : "a48840b0794dbba03b0ca726bd10d31e",
         "status" : "passed",
         "time" : {
-          "start" : 1603872521207,
-          "stop" : 1603872521207,
-          "duration" : 0
+          "start" : 1605233355039,
+          "stop" : 1605233355334,
+          "duration" : 295
         },
-        "flaky" : true,
-        "parameters" : [ ]
+        "flaky" : false,
+        "parameters" : [ "'login'" ]
+      }, {
+        "name" : "test_login[resume_list]",
+        "uid" : "67c30e9eec94db8f",
+        "parentUid" : "a48840b0794dbba03b0ca726bd10d31e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605233355589,
+          "stop" : 1605233355671,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "parameters" : [ "'resume_list'" ]
+      }, {
+        "name" : "test_login[resume_save]",
+        "uid" : "3cb38aaf6abc5e5e",
+        "parentUid" : "a48840b0794dbba03b0ca726bd10d31e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605233355349,
+          "stop" : 1605233355575,
+          "duration" : 226
+        },
+        "flaky" : false,
+        "parameters" : [ "'resume_save'" ]
       } ],
-      "uid" : "a0adbb0e61b3192cc2b14e19917c7936"
+      "uid" : "a48840b0794dbba03b0ca726bd10d31e"
     } ],
     "uid" : "d3f9ac2404da19e45796ab23e9684e97"
   } ]

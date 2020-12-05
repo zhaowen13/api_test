@@ -1,0 +1,5 @@
+2020-11-16 13:51:45,532 - [BasePage.py --> line:49] - INFO : 
+name:resume_list
+url:/1.0/common/banner?client_type=1&type=1&city_id=11000&request_sign=A3902DA366263CB95A38E2D41AD53E8C
+headers:{'Accept': 'application/x-www-form-urlencoded; charset=utf-8', 'Authorization': 'bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC91c2VyLXNlcnZpY2Uuc3QzLnRlc3QubGFueGlua2EuY29tXC8yLjBcL3VzZXJzXC9sb2dpbiIsImlhdCI6MTYwNTUwNTkwNSwiZXhwIjoxNjA2ODAxOTA1LCJuYmYiOjE2MDU1MDU5MDUsImp0aSI6InVOZkJVc3U2NWFSaHhoQnUiLCJzdWIiOjUxMTcyOTIsInBydiI6IjNhN2IwNmU5NTBkMDhlMjMzMjkyMjdjN2E2YTUyMzQyYWJiNGYxOWIiLCJidXNpbmVzc190eXBlIjo2fQ.kfUzEo9E-cEsclzEKXfKN7hIBFGw8wZk1tJ7t0OJhJY'}
+response:{'code': 0, 'msg': '成功', 'data': {'list': []}}
