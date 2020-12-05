@@ -4,7 +4,7 @@
 2. 对requests基础的get,post等请求做了封装，加入了日志,
 3. 把login也封装在底层，login会把登录信息（cookies，token，Session等）存放到属性中，在其他请求被调用时默认会带上登录信息,
 4. 每个请求的response会以属性的形式存放在data属性中，属性的名称就是请求的名称
-5.CaseOperate是case解析和执行，在初始化时会读取所有case目录下面所有的文件，把case按目录，name，存放在字典中
+5. CaseOperate是case解析和执行，在初始化时会读取所有case目录下面所有的文件，把case按目录，name，存放在字典中
 
  二.使用
 -------
@@ -72,4 +72,4 @@
 def test_login(self,name):
     self.pytestObject(self,name)  #执行case，断言
     ```
-3.方法名也要以test开头(pytest规范)
+3. 方法名也要以test开头(pytest规范)
