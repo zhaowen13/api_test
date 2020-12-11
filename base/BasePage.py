@@ -39,7 +39,12 @@ class api_test(object):
 
     def post(self,name,url,body,headers):   #post请求，默认添加login返回的Authorization信息
         headers['Authorization']=self.token
-        response=self.my_requests.post(self.uri+url,body,headers=headers,cookies=self.cookies,verify=False).json()
+        if "file" in body.keys():   #如果请求body中有file的key则为上传文件方法
+            files = {'file':open("../file/"+body['file'],'rb')}
+            response=self.my_requests.post(self.uri+url,body,files=files,headers=headers,cookies=self.cookies,verify=False).json()
+        else:
+            response=self.my_requests.post(self.uri+url,body,headers=headers,cookies=self.cookies,verify=False).json()
+        logger_cls.info(mas+"\n")
         logger_cls.info("\nname:{0}\nurl:{1}\nheaders:{2}\nbody:{3}\nresponse:{4}".format(name,url,headers,body,response))
         setattr(self.data,name,MyObject.dict_to_object(response))
 
