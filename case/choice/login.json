@@ -8,8 +8,8 @@
                 "Accept": "application/x-www-form-urlencoded; charset=utf-8"
             },
             "body": {
-                "captcha": "${myMethod.idiot(${test.mobile})}",
-                "mobile": "${test.mobile}"
+                "captcha": "1234",
+                "mobile": "15080630002"
             },
             "assertion": {
                 "expected": "0",
@@ -17,43 +17,40 @@
             }
         },
         {
-            "name": "resume_save",
-            "url": "/1.0/member/resume/save",
+            "name": "upload_file",
+            "url": "/1.0/common/image/upload_file",
             "method": "post",
-            "headers": {
-                "Content-type": "application/json; charset=utf-8"
-            },
+            "headers": {},
             "body": {
-                "member": {
-                    "name": "二空",
-                    "gender": "1",
-                    "birthday": "2000-1-1",
-                    "job_want_status": "1",
-                    "expect_salary_min": "2000",
-                    "expect_salary_max": "5000"
-                },
-                "resume": {
-                    "expect_city_id": 11000,
-                    "expect_job": "10,11"
-                }
+                "type": "company",
+                "bucket": 2,
+                "file": "123.jpg"
             },
             "assertion": {
                 "expected": "0",
-                "actual": "${resume_save.code}"
+                "actual": "${upload_file.code}"
             }
         },
         {
-            "name": "resume_list",
-            "url": "/1.0/common/banner?client_type=${test.client_type}&type=1&city_id=11000&request_sign=A3902DA366263CB95A38E2D41AD53E8C",
-            "method": "get",
+            "name": "apply_for",
+            "url": "/1.0/business/company/apply_for",
+            "method": "post",
             "headers": {
-                "Accept": "application/x-www-form-urlencoded; charset=utf-8"
+                "Content-Type": "application/x-www-form-urlencoded",
+                "sub-business-type": "b"
             },
             "body": {
+                "full_name": "测试一百号",
+                "business_license_url": "${upload_file.data.url}",
+                "business_license_id": "${upload_file.data.id}",
+                "industry_name": "休闲娱乐",
+                "industry_id": 1,
+                "is_chain": "1",
+                "short_name": "房产"
             },
             "assertion": {
                 "expected": "0",
-                "actual": "${resume_list.code}"
+                "actual": "${apply_for.code}"
             }
         }
     ]
